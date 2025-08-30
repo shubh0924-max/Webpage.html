@@ -132,11 +132,10 @@
     <!-- TEAMS & DRIVERS SECTION -->
     <h2>Top Teams & Drivers</h2>
     <div class="teams">
-      <div class="card" onclick="window.location='driver_max.html'">
+      <div class="card">
   <h3>Red Bull Racing</h3>
   <p>Star Driver: Max Verstappen</p>
 </div>
- 
       <div class="card">
         <h3>Mercedes AMG</h3>
         <p>Star Driver: Lewis Hamilton</p>
