@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 - About</title>
+  <style>
+    /* === BASIC PAGE STYLES === */
+    body {
+      margin: 0; /* removes default spacing */
+      font-family: Arial, sans-serif; /* clean readable font */
+      background-color: black; /* dark background for F1 theme */
+      color: #fff; /* white text */
+    }
+
+    /* === HEADER === */
+    header {
+      background-color:red; /* F1 red color */
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* === NAVIGATION BAR === */
+    nav {
+      background: gray ; /* dark gray navbar */
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color:white ;
+      text-decoration: none; /* remove underline */
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: red ; /* red on hover */
+    }
+
+    /* === HERO SECTION (Top banner with background image) === */
+    .hero {
+      background: 
+        url("https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg") no-repeat center/200px, 
+        url("https://wallpapercave.com/wp/wp6623696.jpg") no-repeat center/cover;
+      height: 350px; /* height of banner */
+      display: flex;
+      justify-content: center; /* center text horizontally */
+      align-items: center; /* center text vertically */
+      text-shadow: 2px 2px 8px #000; /* glow effect */
+    }
+    .hero h1 {
+      font-size: 48px;
+      color: white;
+    }
+
+    /* === MAIN CONTENT AREA === */
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.7; /* better readability */
+    }
+
+    /* === GRID STYLES (used for Teams & Skills section) === */
+    .teams, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* responsive layout */
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* === CARD STYLE (used for teams and skills) === */
+    .card {
+      background: gray; /* dark gray background */
+      padding: 20px;
+      border-radius: 12px; /* rounded corners */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* shadow effect */
+      transition: transform 0.2s ease; /* smooth hover effect */
+    }
+    .card:hover {
+      transform: scale(1.05); /* zoom effect when hovering */
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: red heading; /* red heading */
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: light gray ; /* light gray text */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    Formula 1
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Teams</a>
+    <a href="#">Drivers</a>
+  </nav>
+
+  <!-- HERO SECTION WITH BACKGROUND IMAGE -->
+  <section class="hero">
+    <h1>The Pinnacle of Motorsport</h1>
+  </section>
+
+  <!-- MAIN CONTENT START -->
+  <div class="content">
+    
+    <!-- ABOUT SECTION -->
+    <h2>About Formula 1</h2>
+    <p>
+      Formula 1 (F1) is the highest class of international racing for open-wheel single-seater cars. 
+      Organized by the FIA and owned by Formula One Group, F1 features the fastest race cars in the world, 
+      competing across circuits globally. It is considered the pinnacle of motorsport due to its speed, technology, and prestige.
+    </p>
+
+    <!-- TEAMS & DRIVERS SECTION -->
+    <h2>Top Teams & Drivers</h2>
+    <div class="teams">
+      <div class="card">
+        <h3>Red Bull Racing</h3>
+        <p>Star Driver: Max Verstappen</p>
+      </div>
+      <div class="card">
+        <h3>Mercedes AMG</h3>
+        <p>Star Driver: Lewis Hamilton</p>
+      </div>
+      <div class="card">
+        <h3>Ferrari</h3>
+        <p>Star Driver: Charles Leclerc</p>
+      </div>
+      <div class="card">
+        <h3>McLaren</h3>
+        <p>Star Driver: Lando Norris</p>
+      </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <h2 style="margin-top:40px;">Skills Required for F1 Drivers</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Reflexes & Reaction Time</h3>
+        <p>Drivers react within milliseconds at speeds over 300 km/h.</p>
+      </div>
+      <div class="card">
+        <h3>Physical Fitness</h3>
+        <p>Strong neck and core muscles to withstand high G-forces during races.</p>
+      </div>
+      <div class="card">
+        <h3>Focus & Concentration</h3>
+        <p>Maintaining sharp focus for 2+ hours under pressure is essential.</p>
+      </div>
+      <div class="card">
+        <h3>Technical Knowledge</h3>
+        <p>Understanding car mechanics and giving feedback to engineers.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- MAIN CONTENT END -->
+
+  <!-- FOOTER -->
+  <footer>
+    Formula 1 Fanpage
+  </footer>
+
+</body>
+</html>
